@@ -1,0 +1,57 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 area             area_tc_1,code,readonly
+    2 00000000                 EXPORT           tc_1_loop
+    3 00000000         
+    4 00000000 4601    tc_1_loop
+                               mov              r1, r0
+    5 00000002 F04F 0000       mov              r0, #0
+    6 00000006         
+    7 00000006 F100 0004 
+                       loc_loop
+                               add              r0, #4
+    8 0000000A 4288            cmp              r0, r1
+    9 0000000C DBFB            blt              loc_loop
+   10 0000000E         
+   11 0000000E                 end
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4 --apcs=interw
+ork --depend=.\objects\asm-basic.d -o.\objects\asm-basic.o -I.\RTE\_ARM-M4 -IC:
+\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include -IC:\Keil_v5\ARM\CM
+SIS\Include --predefine="__UVISION_VERSION SETA 524" --predefine="_RTE_ SETA 1"
+ --predefine="ARMCM4 SETA 1" --list=.\listings\asm-basic.lst src\asm-basic.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+area_tc_1 00000000
+
+Symbol: area_tc_1
+   Definitions
+      At line 1 in file src\asm-basic.s
+   Uses
+      None
+Comment: area_tc_1 unused
+loc_loop 00000006
+
+Symbol: loc_loop
+   Definitions
+      At line 7 in file src\asm-basic.s
+   Uses
+      At line 9 in file src\asm-basic.s
+Comment: loc_loop used once
+tc_1_loop 00000000
+
+Symbol: tc_1_loop
+   Definitions
+      At line 4 in file src\asm-basic.s
+   Uses
+      At line 2 in file src\asm-basic.s
+Comment: tc_1_loop used once
+3 symbols
+336 symbols in table

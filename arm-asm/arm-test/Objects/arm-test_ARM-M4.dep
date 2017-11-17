@@ -1,0 +1,13 @@
+Dependencies for Project 'arm-test', Target 'ARM-M4': (DO NOT MODIFY !)
+F (.\src\asm-basic.s)(0x5A0F06CE)(--cpu Cortex-M4 --li -g --apcs=interwork -I.\RTE\_ARM-M4-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "ARMCM4 SETA 1"--list .\listings\asm-basic.lst --xref -o .\objects\asm-basic.o --depend .\objects\asm-basic.d)
+F (.\src\main.c)(0x5A0F0DDC)(--c99 -c --cpu Cortex-M4 --li -g -O0 --apcs=interwork --split_sections-I.\RTE\_ARM-M4-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -D_RTE_ -DARMCM4-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
+F (.\startup.s)(0x5A0F06B1)(--cpu Cortex-M4 --li -g --apcs=interwork -I.\RTE\_ARM-M4-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "ARMCM4 SETA 1"--list .\listings\startup.lst --xref -o .\objects\startup.o --depend .\objects\startup.d)
+F (C:\Keil_v5\ARM\PACK\Keil\ARM_Compiler\1.3.1\Source\retarget_io.c)(0x584E29BE)(--c99 -c --cpu Cortex-M4 --li -g -O0 --apcs=interwork --split_sections-I.\RTE\_ARM-M4-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\Device\ARM\ARMCM4\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="524" -D_RTE_ -DARMCM4-o .\objects\retarget_io.o --omf_browse .\objects\retarget_io.crf --depend .\objects\retarget_io.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x588B8344)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588B8344)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x588B8344)
+I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x588B8344)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_sys.h)(0x588B8344)
+I (.\RTE\_ARM-M4\RTE_Components.h)(0x5A0F095D)
