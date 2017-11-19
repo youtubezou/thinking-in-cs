@@ -1,0 +1,18 @@
+# C/C++ Editor files
+# User keywords
+keywords6.$(file.patterns.cpp)=
+
+
+
+# Asm Editor files
+# User keywords
+keywords6.$(file.patterns.asm)=
+
+
+
+# Editor Text files
+# User keywords
+keywords6.$(file.patterns.txt)=
+
+
+
