@@ -1,0 +1,11 @@
+struct hac_cfg_data g_#hac_name#_cfgs[] = {
+	#cfg_data#
+};
+
+#cfg_data# := {count, cfg_pair},
+
+struct hac_cfg_pair g_#hac_name#_#sheet_name#_cfg[] = {
+	#cfg_pair#
+};
+
+#cfg_pair# := {address, value}, /*logical value*/
