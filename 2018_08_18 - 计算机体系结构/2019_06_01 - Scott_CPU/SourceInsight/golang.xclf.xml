@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceInsightConfiguration
+	AppVer="4.00.0088"
+	AppVerMinReader="4.00.0032"
+	>
+	<!-- This is a Source Insight configuration file. -->
+	<!-- www.sourceinsight.com -->
+
+	<Languages>
+		<Language
+			Name="Go Language"
+			Comment=""
+			CaseSensitive="1"
+			CPreprocessor="0"
+			SmartIndent="0"
+			ContainsSourceCode="1"
+			SyntaxFormatting="1"
+			UseRegexParsing="1"
+			SyntaxDecorations="0"
+			CommentStyles="0"
+			AllowSmartTab="1"
+			DetectNumbers="1"
+			CHexNum="1"
+			IntelHexNum="0"
+			MotorolaHexNum="0"
+			BasicHexNum="0"
+			IntelOctalNum="0"
+			QOctalNum="0"
+			NonAlphaNumIdentChars="_"
+			>
+			<CustomParsing>
+				<Expression
+					SymbolType="Function"
+					Pattern="func\w+\([a-zA-Z_][a-zA-Z0-9_]*\)"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Function"
+					Pattern="func\w+(.*)\w+\([a-zA-Z_][a-zA-Z0-9_]*\)("
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Structure"
+					Pattern="type\w+\([a-zA-Z_][0-9a-zA-Z_]*\)\w+struct"
+					RegexType="Source Insight"
+					/>
+				<Expression
+					SymbolType="Interface"
+					Pattern="type\w+\([a-zA-Z_][0-9a-zA-Z_]*\)\w+interface"
+					RegexType="Source Insight"
+					/>
+			</CustomParsing>
+			<Ranges>
+				<Range
+					Type="Multiline"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Multi Line"
+					StyleDelimiter="1"
+					StartString="/*"
+					EndString="*/"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Line"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="Comment Single Line"
+					StyleDelimiter="1"
+					StartString="//"
+					EscapeString=""
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Multiline"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="String"
+					StyleDelimiter="1"
+					StartString="&quot;"
+					EndString="&quot;"
+					EscapeString="\"
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+				<Range
+					Type="Multiline"
+					AllowNesting="0"
+					ParseInside="0"
+					ReadOnly="0"
+					StyleName="String"
+					StyleDelimiter="1"
+					StartString="`"
+					EndString="`"
+					EscapeString="\"
+					ValidateColumns="0"
+					FirstColumn="0"
+					LastColumn="0"
+					/>
+			</Ranges>
+			<Keywords>
+				<Item Keyword="!" Style="Operator" />
+				<Item Keyword="!=" Style="Operator" />
+				<Item Keyword="%" Style="Operator" />
+				<Item Keyword="%=" Style="Operator" />
+				<Item Keyword="&amp;" Style="Operator" />
+				<Item Keyword="&amp;&amp;" Style="Operator" />
+				<Item Keyword="&amp;=" Style="Operator" />
+				<Item Keyword="&amp;^" Style="Operator" />
+				<Item Keyword="&amp;^=" Style="Operator" />
+				<Item Keyword="(" Style="Operator" />
+				<Item Keyword=")" Style="Operator" />
+				<Item Keyword="*" Style="Operator" />
+				<Item Keyword="*=" Style="Operator" />
+				<Item Keyword="+" Style="Operator" />
+				<Item Keyword="++" Style="Operator" />
+				<Item Keyword="+=" Style="Operator" />
+				<Item Keyword="," Style="Operator" />
+				<Item Keyword="-" Style="Operator" />
+				<Item Keyword="--" Style="Operator" />
+				<Item Keyword="-=" Style="Operator" />
+				<Item Keyword="." Style="Operator" />
+				<Item Keyword="..." Style="Operator" />
+				<Item Keyword="/" Style="Operator" />
+				<Item Keyword="/=" Style="Operator" />
+				<Item Keyword=":" Style="Operator" />
+				<Item Keyword=":=" Style="Operator" />
+				<Item Keyword=";" Style="Operator" />
+				<Item Keyword="&lt;" Style="Operator" />
+				<Item Keyword="&lt;-" Style="Operator" />
+				<Item Keyword="&lt;&lt;" Style="Operator" />
+				<Item Keyword="&lt;&lt;=" Style="Operator" />
+				<Item Keyword="&lt;=" Style="Operator" />
+				<Item Keyword="=" Style="Operator" />
+				<Item Keyword="==" Style="Operator" />
+				<Item Keyword="&gt;" Style="Operator" />
+				<Item Keyword="&gt;=" Style="Operator" />
+				<Item Keyword="&gt;&gt;" Style="Operator" />
+				<Item Keyword="&gt;&gt;=" Style="Operator" />
+				<Item Keyword="break" Style="Control" />
+				<Item Keyword="case" Style="Control" />
+				<Item Keyword="chan" Style="Keyword" />
+				<Item Keyword="const" Style="Keyword" />
+				<Item Keyword="continue" Style="Control" />
+				<Item Keyword="default" Style="Control" />
+				<Item Keyword="defer" Style="Keyword" />
+				<Item Keyword="else" Style="Control" />
+				<Item Keyword="fallthrough" Style="Control" />
+				<Item Keyword="for" Style="Control" />
+				<Item Keyword="func" Style="Control" />
+				<Item Keyword="go" Style="Control" />
+				<Item Keyword="goto" Style="Control" />
+				<Item Keyword="if" Style="Control" />
+				<Item Keyword="import" Style="Keyword" />
+				<Item Keyword="interface" Style="Keyword" />
+				<Item Keyword="map" Style="Keyword" />
+				<Item Keyword="package" Style="Keyword" />
+				<Item Keyword="range" Style="Keyword" />
+				<Item Keyword="return" Style="Control" />
+				<Item Keyword="select" Style="Control" />
+				<Item Keyword="struct" Style="Keyword" />
+				<Item Keyword="switch" Style="Control" />
+				<Item Keyword="type" Style="Keyword" />
+				<Item Keyword="var" Style="Keyword" />
+				<Item Keyword="{" Style="Operator" />
+				<Item Keyword="[" Style="Operator" />
+				<Item Keyword="|" Style="Operator" />
+				<Item Keyword="|=" Style="Operator" />
+				<Item Keyword="||" Style="Operator" />
+				<Item Keyword="]" Style="Operator" />
+				<Item Keyword="}" Style="Operator" />
+				<Item Keyword="^" Style="Operator" />
+				<Item Keyword="^=" Style="Operator" />
+			</Keywords>
+		</Language>
+	</Languages>
+</SourceInsightConfiguration>
